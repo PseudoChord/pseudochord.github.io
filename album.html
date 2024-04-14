@@ -6,6 +6,7 @@
     <title>Bootstrap Photo Album</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1 style="text-align: center;">Bootstrap Photo Album</h1>
@@ -13,29 +14,46 @@
 
       <div class="row row-cols-3 gap-5">
         <div class="col">
-          <img src="Images/food1.jpg" alt="Image 1" class="img-thumbnail">
+          <img src="Images/food1.jpg" alt="Image 1" class="img-thumbnail" id="food_1">
+          <button type="button" class="btn btn-primary" onclick="checkReddish()">Check Reddish</button>
         </div>
         <div class="col">
-          <img src="Images/food2.jpg" alt="Image 2" class="img-thumbnail">
+          <img src="Images/food2.jpg" alt="Image 2" class="img-thumbnail" id="food_2">
+          <button type="button" class="btn btn-primary" onclick="makeReddish()">Make Reddish</button>
         </div>
         <div class="col">
-          <img src="Images/food3.jpg" alt="Image 3" class="img-thumbnail">
+          <img src="Images/food3.jpg" alt="Image 3" class="img-thumbnail" id="duplimage">
+          <button type="button" class="btn btn-primary" onclick="dupli()">Duplicate</button>
         </div>
       </div>
       <div class="row row-cols-3 gap-2">
         <div class="col">
-          <img src="Images/food4.jpg" alt="Image 4" class="img-thumbnail">
+          <img src="Images/food4.jpg" alt="Image 4" class="img-thumbnail" id="bright">
+          <button type="button" class="btn btn-primary" onclick="increaseBrightness()">Increase brightness</button>
         </div>
         <div class="col">
-          <img src="Images/food5.jpg" alt="Image 5" class="img-thumbnail">
+          <img src="Images/food5.jpg" alt="Image 5" class="img-thumbnail" id="reso">
+          <button type="button" class="btn btn-primary" onclick="reduceResolution()">Reduce Resolution</button>
         </div>
         <div class="col">
-          <img src="Images/food6.jpg" alt="Image 6" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <img src="Images/food6.jpg" alt="Image 7" class="img-thumbnail">
-          </div>
+          <img src="Images/food6.jpg" alt="Image 6" class="img-thumbnail" id="avatar">
+          <button type="button" class="btn btn-primary" onclick="createAvatar()">Create Avatar</button>
+          <canvas id="avatarCanvas" width="200" height="200"></canvas>
+        </div>        
       </div>
+
+      <div class="row row-cols-3 gap-2">
+        <div class="col">
+          <img src="Images/AJ_Styles_bio.jpg" alt="Image 4" class="img-thumbnail" id="grayscale">
+          <button type="button" class="btn btn-primary" onclick="grayscale()">Grayscale</button>
+        </div>
+        <div class="col">
+          <img src="Images/rollins1.jpg" alt="Image 5" class="img-thumbnail" id="qr">
+          <button type="button" class="btn btn-primary" onclick="reduceResolution()">Reduce Resolution</button>
+        </div>
+              
+      </div>
+
     </div>
       
     
